@@ -6,7 +6,6 @@ const props = defineProps({
     default: 8
   }
 });
-
 </script>
 
 <template>
@@ -20,7 +19,8 @@ ul {
   display: grid;
 
   font-size: 3rem;
-  border: 1px solid black;
+  align-content: start;
+  gap: 1px;
 }
 
 li {

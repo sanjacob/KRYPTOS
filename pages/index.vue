@@ -50,10 +50,10 @@ const decode = (input) => (
 
 <template>
 <ul>
-<li v-for="row in k0">
-  <h1>{{ row }}</h1>
-  <h2>{{ decode(row) }}</h2>
-</li>
+  <li v-for="row in k0">
+    <h1>{{ row }}</h1>
+    <h2>{{ decode(row) }}</h2>
+  </li>
 </ul>
 </template>
 
@@ -75,13 +75,13 @@ li {
 h1 {
   margin: 1rem;
   opacity: 1;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.8s linear;
 }
 
 h2 {
   margin: 1rem;
   opacity: 0;
-  transition: opacity 0.4s linear;
+  transition: opacity 1.0s linear;
   position: absolute;
   top: 0.5rem;
   font-weight: bold;

@@ -28,3 +28,45 @@ a {
 h1, h2, h3 {
   font-family: var(--display-font);
 }
+
+input {
+  font-family: var(--display-font);
+  border: 1px solid black;
+  padding: 0.2rem;
+  border-radius: 2px;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+input:disabled {
+  background-color: black;
+  color: white;
+}
+
+select {
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+
+  font-family: var(--display-font);
+  font-weight: bold;
+  padding: 0.4rem;
+  border-radius: 2px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  font-family: var(--display-font);
+  font-weight: bold;
+  padding: 0.4rem;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 2px;
+  transition: background-color 0.2s ease-in;
+}
+
+button:hover {
+  background-color: rgba(1, 1, 1, 0.2); 
+}
