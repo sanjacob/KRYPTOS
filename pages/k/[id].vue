@@ -5,7 +5,7 @@ const cipher = ref(k[1]);
 <template>
 <div id="split">
   <aside>
-    <KryptosPipeline :input="k1" @change="cipher = $event;"/>
+    <KryptosPipeline :input="k[1]" @change="cipher = $event;"/>
   </aside>
   <KryptosGrid id="grid" :cipher :row="3" />
 </div>
