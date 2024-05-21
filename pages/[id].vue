@@ -3,7 +3,10 @@ const route = useRoute();
 const page = route.params.id[1];
 
 const input = tools.s(k[page]);
+console.log(input);
 const cipher = ref(input);
+
+useHead({ title: route.params.id });
 </script>
 
 <template>

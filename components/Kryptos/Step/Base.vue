@@ -54,9 +54,6 @@ li {
 }
 
 textarea {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 100%;
   background-color: black;
   color: white;
   padding: 0.2rem;
@@ -64,6 +61,8 @@ textarea {
   outline: none;
   border: none;
   border-radius: 2px;
+  resize: none;
+  min-height: 4rem;
 }
 </style>
 
