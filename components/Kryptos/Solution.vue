@@ -1,11 +1,13 @@
 <script setup lang="ts">
+const route = useRoute();
+const page = route.params.id[1];
 </script>
 
 <template>
 <details>
 <summary>Official Solution</summary>
 <ol>
-<li>Vigenère [KRYPTOS, PALIMPSEST]</li>
+<li v-for="s in solutions[page]">{{s}}</li>
 </ol>
 </details>
 </template>

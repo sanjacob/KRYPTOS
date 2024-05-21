@@ -12,6 +12,7 @@ const cipher = ref(input);
     <h1>k{{page}}</h1>
     <KryptosSolution />
     <KryptosPipeline :input @change="cipher = $event;"/>
+    <KryptosNav />
   </aside>
   <KryptosGrid id="grid" :cipher :row="3" />
 </div>
