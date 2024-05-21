@@ -1,45 +1,27 @@
 <script setup lang="ts">
 const emit = defineEmits(['change', 'remove']);
 
+const output = ref('');
+
 const props = defineProps({
   index: Number,
   input: String
 });
 
-const key = ref('KRYPTOS');
-const passphrase = ref('PALIMPSEST');
-const output = computed(() => vigenere.decode(passphrase.value.toUpperCase()));
-
-const vigenere = reactive(
-  useVigenere(toRef(() => props.input), key, passphrase)
-);
-
-const decode = () => emit('change', vigenere.decode(passphrase.value.toUpperCase()));
-
-onMounted(decode);
-watch(toRef(() => props.input), decode);
+const onChange = (event) => {
+  output.value = event;
+  emit('change', event);
+};
 </script>
 
 <template>
-<li>
+<li class="step">
   <div class="title">
     <button @click="emit('remove')">x</button>
     <h4>Step {{ index }}</h4>
   </div>
   <KryptosStepMode class="mode"/>
-  <label>
-    Key
-    <input id="key" type="text" v-model="key" @change="decode"/>
-  </label>
-  <label>
-    Alphabet
-    <input id="alphabet" type="text" :title="vigenere.alphabet"
-           v-model="vigenere.alphabet" disabled/>
-  </label>
-  <label>
-    Passphrase
-    <input id="passphrase" type="text" v-model="passphrase" @change="decode"/>
-  </label>
+  <KryptosStepVigenere @change="onChange" :input/>
   <label style="display: flex; flex-flow: column nowrap;">
     Out
     <textarea style="margin-top: 1rem;" disabled>{{ output }}</textarea>
@@ -61,6 +43,7 @@ li > div.title > h4 {
 li > div.title > button {
   border: none;
   height: 50%;
+  background-color: none;
 }
 
 li {
@@ -68,17 +51,6 @@ li {
   flex-flow: column;
   grid-gap: 1rem;
   min-width: 0;
-}
-
-li > label {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-input {
-  text-transform: lowercase;
 }
 
 textarea {
@@ -92,5 +64,24 @@ textarea {
   outline: none;
   border: none;
   border-radius: 2px;
+}
+</style>
+
+<style>
+li.step input {
+  text-transform: lowercase;
+}
+
+li.step > label > :is(input, textarea) {
+  flex: 2;
+  width: 100%;
+}
+
+li.step > label {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  grid-gap: 1rem;
 }
 </style>

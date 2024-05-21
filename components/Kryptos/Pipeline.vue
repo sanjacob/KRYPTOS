@@ -35,7 +35,7 @@ const update = (i, event) => {
 
 <template>
 <ul>
-  <KryptosStep v-for="(s, i) in steps" :key="s.id"
+  <KryptosStepBase v-for="(s, i) in steps" :key="s.id"
                @remove="remove(i)" @change="update(i, $event)"
                :input="i ? steps[i-1].output : props.input" :index="i+1" />
 </ul>
@@ -48,5 +48,9 @@ ul {
   flex-flow: column nowrap;
   gap: 2rem;
   margin: 2rem 0;
+}
+
+button {
+  width: 100%;
 }
 </style>

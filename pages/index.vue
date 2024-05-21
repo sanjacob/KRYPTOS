@@ -1,47 +1,75 @@
+<script setup lang="ts">
+const vigenere =
+` ABCDEFGHIJKLMNOPQRSTUVWXYZABCD
+AKRYPTOSABCDEFGHIJLMNQUVWXZKRYP
+BRYPTOSABCDEFGHIJLMNQUVWXZKRYPT
+CYPTOSABCDEFGHIJLMNQUVWXZKRYPTO
+DPTOSABCDEFGHIJLMNQUVWXZKRYPTOS
+ETOSABCDEFGHIJLMNQUVWXZKRYPTOSA
+FOSABCDEFGHIJLMNQUVWXZKRYPTOSAB
+GSABCDEFGHIJLMNQUVWXZKRYPTOSABC
+HABCDEFGHIJLMNQUVWXZKRYPTOSABCD
+IBCDEFGHIJLMNQUVWXZKRYPTOSABCDE
+JCDEFGHIJLMNQUVWXZKRYPTOSABCDEF
+KDEFGHIJLMNQUVWXZKRYPTOSABCDEFG
+LEFGHIJLMNQUVWXZKRYPTOSABCDEFGH
+MFGHIJLMNQUVWXZKRYPTOSABCDEFGHI
+NGHIJLMNQUVWXZKRYPTOSABCDEFGHIJL
+OHIJLMNQUVWXZKRYPTOSABCDEFGHIJL
+PIJLMNQUVWXZKRYPTOSABCDEFGHIJLM
+QJLMNQUVWXZKRYPTOSABCDEFGHIJLMN
+RLMNQUVWXZKRYPTOSABCDEFGHIJLMNQ
+SMNQUVWXZKRYPTOSABCDEFGHIJLMNQU
+TNQUVWXZKRYPTOSABCDEFGHIJLMNQUV
+UQUVWXZKRYPTOSABCDEFGHIJLMNQUVW
+VUVWXZKRYPTOSABCDEFGHIJLMNQUVWX
+WVWXZKRYPTOSABCDEFGHIJLMNQUVWXZ
+XWXZKRYPTOSABCDEFGHIJLMNQUVWXZK
+YXZKRYPTOSABCDEFGHIJLMNQUVWXZKR
+ZZKRYPTOSABCDEFGHIJLMNQUVWXZKRY
+ ABCDEFGHIJKLMNOPQRSTUVWXYZABCD
+`;
+</script>
+
 <template>
-<ul>
-  <li v-for="row in k[0]">
-    <h1>{{ row }}</h1>
-    <h2>{{ morse.decode(row) }}</h2>
-  </li>
-</ul>
+<article>
+<pre>
+<span id="k1">{{ k[1] }}</span>
+<span id="k2">{{ k[2] }}</span>
+<span id="k3">{{ k[3] }}</span><span id="k4">{{ k[4] }}</span>
+</pre>
+<pre>{{ vigenere }}</pre>
+</article>
 </template>
 
 <style scoped>
-ul {
+article {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
 }
 
-li {
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+article > pre {
+  font-size: 2rem;
 }
 
-h1 {
-  margin: 1rem;
-  opacity: 1;
-  transition: opacity 0.8s linear;
+pre > span {
+  transition: color 0.4s linear;
 }
 
-h2 {
-  margin: 1rem;
-  opacity: 0;
-  transition: opacity 1.0s linear;
-  position: absolute;
-  top: 0.5rem;
-  font-weight: bold;
+pre > span#k1:hover {
+  color: crimson;
 }
 
-li:hover > h1 {
-  opacity: 0;
+pre > span#k2:hover {
+  color: green;
 }
 
-li:hover > h2 {
-  opacity: 1;
+pre > span#k3:hover {
+  color: peru;
+}
+
+pre > span#k4:hover {
+  color: deepskyblue;
 }
 </style>
