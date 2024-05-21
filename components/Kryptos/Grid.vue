@@ -17,7 +17,6 @@ const props = defineProps({
 <style scoped>
 ul {
   display: grid;
-
   font-size: 3rem;
   align-content: start;
   gap: 1px;
@@ -30,5 +29,11 @@ li {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+  ul {
+    font-size: 1rem;
+  }
 }
 </style>
