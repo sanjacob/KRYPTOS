@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: [
+    '@vite-pwa/nuxt'
+  ],
   css: [
     '~/assets/css/theme.css'
   ],
@@ -13,5 +16,7 @@ export default defineNuxtConfig({
       }
     }
   },
-  devtools: { enabled: true }
+
+  devtools: { enabled: true },
+  modules: ["@vite-pwa/nuxt"]
 })
