@@ -35,12 +35,12 @@ div#split {
 aside {
   flex: 1 0;
   width: 100%;
-  min-width: min(300px, calc(100lvw - 2rem));
+  min-width: min(300px, calc(100lvw - 4rem));
 }
 
 #grid {
   flex: 3 0;
   width: 100%;
-  min-width: min(400px, calc(100lvw - 2rem))
+  min-width: min(400px, calc(100lvw - 4rem))
 }
 </style>
