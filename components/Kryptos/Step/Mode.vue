@@ -6,6 +6,7 @@ const model = defineModel();
 <select v-model="model">
   <option value="0">Vigenère</option>
   <option value="1">Rotate</option>
+  <option value="2">Reverse</option>
 </select>
 </template>
 

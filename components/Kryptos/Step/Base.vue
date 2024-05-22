@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import KryptosStepVigenere from './Vigenere.vue';
 import KryptosStepRotate from './Rotate.vue';
+import KryptosStepReverse from './Reverse.vue';
 
 const emit = defineEmits(['change', 'remove']);
 
@@ -19,7 +20,8 @@ const onChange = (event) => {
 
 const modes = [
   KryptosStepVigenere,
-  KryptosStepRotate
+  KryptosStepRotate,
+  KryptosStepReverse
 ];
 </script>
 
