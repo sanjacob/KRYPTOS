@@ -4,6 +4,7 @@ const page = route.params.id[1];
 
 const input = tools.s(k[page]);
 const cipher = ref(input);
+const width = ref(8);
 
 useHead({ title: route.params.id });
 </script>
@@ -14,9 +15,10 @@ useHead({ title: route.params.id });
     <h1>k{{page}}</h1>
     <KryptosSolution v-if="page != 4"/>
     <KryptosPipeline :input @change="cipher = $event;"/>
+    <KryptosResize v-model="width"/>
     <KryptosNav />
   </aside>
-  <KryptosGrid id="grid" :cipher :row="3" />
+  <KryptosGrid id="grid" :cipher :col="width" />
 </div>
 </template>
 

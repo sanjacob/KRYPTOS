@@ -19,7 +19,8 @@ ul {
   display: grid;
   font-size: 3rem;
   align-content: start;
-  gap: 1px;
+  grid-gap: 1px;
+  overflow: scroll;
 }
 
 li {
@@ -29,6 +30,7 @@ li {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  min-width: 3rem;
 }
 
 @media only screen and (max-width: 1000px) {
