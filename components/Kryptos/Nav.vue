@@ -4,9 +4,8 @@
   <NuxtLink to="/k0">k0</NuxtLink>
   <NuxtLink to="/k1">k1</NuxtLink>
   <NuxtLink to="/k2">k2</NuxtLink>
-  <!--<NuxtLink to="/k3">k3</NuxtLink>
+  <NuxtLink to="/k3">k3</NuxtLink>
   <NuxtLink to="/k4">k4</NuxtLink>
-  -->
 </nav>
 </template>
 

@@ -36,7 +36,7 @@ ZZKRYPTOSABCDEFGHIJLMNQUVWXZKRY
 <pre>
 <span id="k1"><NuxtLink to="/k1">{{ k[1] }}</NuxtLink></span>
 <span id="k2"><NuxtLink to="/k2">{{ k[2] }}</NuxtLink></span>
-<span id="k3"><NuxtLink to="#">{{ k[3] }}</NuxtLink></span><span id="k4"><NuxtLink to="#">{{ k[4] }}</NuxtLink></span>
+<span id="k3"><NuxtLink to="/k3">{{ k[3] }}</NuxtLink></span><span id="k4"><NuxtLink to="/k4">{{ k[4] }}</NuxtLink></span>
 </pre>
 <pre>{{ vigenere }}</pre>
 </article>

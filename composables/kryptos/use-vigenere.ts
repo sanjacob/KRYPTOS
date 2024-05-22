@@ -1,14 +1,7 @@
-export const useVigenere = (cipher, key) => {
+export const useVigenere = (cipher, key, passphrase) => {
   const alphabet = ref('');
   const index = ref('');
-
-  const update = () => {
-    alphabet.value = toValue(key) + "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('').filter(
-      (e) => (toValue(key).indexOf(e) == -1)
-    ).join('');
-
-    index.value = Object.fromEntries(alphabet.value.split('').map((c, i) => [c, i]));
-  };
+  const result = ref('');
 
   const decode = (passphrase) => {
     const abcLen = alphabet.value.length;
@@ -20,7 +13,17 @@ export const useVigenere = (cipher, key) => {
     }).join('');
   };
 
+  const update = () => {
+    alphabet.value = toValue(key) + "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('').filter(
+      (e) => (toValue(key).indexOf(e) == -1)
+    ).join('');
+
+    index.value = Object.fromEntries(alphabet.value.split('').map((c, i) => [c, i]));
+
+    result.value = decode(toValue(passphrase).toUpperCase());
+  };
+
   watchEffect(update);
 
-  return { alphabet, decode };
+  return { alphabet, result };
 };

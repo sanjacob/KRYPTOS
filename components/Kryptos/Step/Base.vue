@@ -1,7 +1,11 @@
 <script setup lang="ts">
+import KryptosStepVigenere from './Vigenere.vue';
+import KryptosStepRotate from './Rotate.vue';
+
 const emit = defineEmits(['change', 'remove']);
 
 const output = ref('');
+const mode = ref(0);
 
 const props = defineProps({
   index: Number,
@@ -12,6 +16,11 @@ const onChange = (event) => {
   output.value = event;
   emit('change', event);
 };
+
+const modes = [
+  KryptosStepVigenere,
+  KryptosStepRotate
+];
 </script>
 
 <template>
@@ -20,8 +29,8 @@ const onChange = (event) => {
     <button @click="emit('remove')">x</button>
     <h4>Step {{ index }}</h4>
   </div>
-  <KryptosStepMode class="mode"/>
-  <KryptosStepVigenere @change="onChange" :input/>
+  <KryptosStepMode v-model="mode"/>
+  <component :is="modes[mode]" @change="onChange" :input/>
   <label style="display: flex; flex-flow: column nowrap;">
     Out
     <textarea style="margin-top: 1rem;" disabled>{{ output }}</textarea>

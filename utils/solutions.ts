@@ -6,6 +6,9 @@ null,
 [
   'Vigenère [KRYPTOS, ABSCISSA]'
 ],
-[],
+[
+  'Rotate [24, 90]',
+  'Rotate [8, 90]'
+],
 []
 ];

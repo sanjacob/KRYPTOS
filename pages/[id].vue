@@ -12,7 +12,7 @@ useHead({ title: route.params.id });
 <div id="split">
   <aside>
     <h1>k{{page}}</h1>
-    <KryptosSolution />
+    <KryptosSolution v-if="page != 4"/>
     <KryptosPipeline :input @change="cipher = $event;"/>
     <KryptosNav />
   </aside>

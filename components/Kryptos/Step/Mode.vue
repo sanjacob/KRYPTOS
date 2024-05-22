@@ -1,8 +1,11 @@
+<script setup lang="ts">
+const model = defineModel();
+</script>
+
 <template>
-<select>
-  <option>Vigenere</option>
-  <option>Resize</option>
-  <option>Caesar</option>
+<select v-model="model">
+  <option value="0">Vigenère</option>
+  <option value="1">Rotate</option>
 </select>
 </template>
 
