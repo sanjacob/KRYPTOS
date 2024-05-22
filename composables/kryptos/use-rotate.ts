@@ -19,7 +19,7 @@ export const useRotate = (cipher, col, angle) => {
         const x0 = w ? j : i;
         const y0 = w ? i : j;
 
-        const x = !(angle == 90 || angle == 270) ? x0 : col - x0 - 1;
+        const x = !(angle == 90 || angle == 180) ? x0 : col - x0 - 1;
         const y = !(angle == 180 || angle == 270) ? y0 : row - y0 - 1;
 
         plaintext.push(c(x, y));
