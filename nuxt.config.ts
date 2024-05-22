@@ -16,7 +16,18 @@ export default defineNuxtConfig({
       }
     }
   },
-
+  pwa: {
+    registerType: 'autoUpdate',
+    registerWebManifestInRouteRules: true,
+    manifest: {
+      name: 'KRYPTOS',
+      short_name: 'KRYPTOS',
+      theme_color: '#505050'
+    },
+    workbox: {
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+    }
+  },
   devtools: { enabled: true },
   modules: ["@vite-pwa/nuxt"]
 })
