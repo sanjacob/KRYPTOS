@@ -22,7 +22,14 @@ export default defineNuxtConfig({
     manifest: {
       name: 'KRYPTOS',
       short_name: 'KRYPTOS',
-      theme_color: '#505050'
+      theme_color: '#505050',
+      icons: [
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png'
+        }
+      ]
     },
     workbox: {
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
