@@ -30,7 +30,7 @@ export const useRotate = (cipher, col, angle) => {
   };
 
   const update = () => {
-    result.value = decode(toValue(cipher), toValue(col), toValue(angle));
+    result.value = decode(toValue(cipher), toValue(col) || 1, toValue(angle));
   };
 
   watchEffect(update);
