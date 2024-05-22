@@ -19,7 +19,7 @@ nav {
 }
 
 nav > a {
-  color: black;
+  color: unset;
 }
 
 nav > a:hover {
