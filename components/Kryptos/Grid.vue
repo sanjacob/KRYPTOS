@@ -31,7 +31,13 @@ li {
   justify-content: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
+  ul {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   ul {
     font-size: 1rem;
   }

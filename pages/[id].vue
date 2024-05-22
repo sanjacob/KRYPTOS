@@ -3,7 +3,6 @@ const route = useRoute();
 const page = route.params.id[1];
 
 const input = tools.s(k[page]);
-console.log(input);
 const cipher = ref(input);
 
 useHead({ title: route.params.id });
@@ -42,6 +41,6 @@ aside {
 #grid {
   flex: 3 0;
   width: 100%;
-  min-width: 400px;
+  min-width: min(400px, calc(100lvw - 2rem))
 }
 </style>
