@@ -1,19 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@vite-pwa/nuxt',
-    [
-      '@nuxtjs/google-fonts',
-      {
-        families: {
-          'Major Mono Display': true,
-          'Roboto Mono': {
-            wght: '100...700'
-          },
-          download: true
-        }
-      }
-    ]
+    '@vite-pwa/nuxt'
   ],
   css: [
     '~/assets/css/theme.css'
