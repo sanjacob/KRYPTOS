@@ -6,7 +6,7 @@ const input = tools.s(k[page]);
 const cipher = ref(input);
 const width = ref(8);
 
-useHead({ title: route.params.id });
+useHead({ title: 'K' + route.params.id });
 </script>
 
 <template>
