@@ -2,6 +2,7 @@ export const useJump = (cipher, jump, shift) => {
   const result = ref('');
 
   const decode = (cipher, jump, shift) => {
+    if (jump <= 0) { jump = 1; }
     const text = cipher.split('');
     const result = [];
     let x = shift - 1;

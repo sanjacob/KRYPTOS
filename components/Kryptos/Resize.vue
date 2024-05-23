@@ -16,7 +16,7 @@ label {
   flex-flow: row nowrap;
   justify-content: space-between;
   margin: 2rem 0;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 input {

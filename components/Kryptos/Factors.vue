@@ -43,19 +43,18 @@ const onClick = (f) => {
 label {
   display: flex;
   flex-flow: row wrap;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 ul {
   display: flex;
   flex-flow: row wrap;
   flex: 1;
-  grid-gap: 1px;
+  grid-gap: 0 10px;
 }
 
 li {
   aspect-ratio: 1/1;
-  padding: 0.2rem;
   text-decoration: underline;
 }
 </style>

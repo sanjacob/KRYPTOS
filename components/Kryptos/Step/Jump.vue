@@ -2,7 +2,7 @@
 const emit = defineEmits(['change']);
 const props = defineProps({input: String});
 
-const jump = ref(0);
+const jump = ref(1);
 const shift = ref(0);
 
 const { result } = useJump(toRef(() => props.input), jump, shift);
@@ -19,6 +19,6 @@ Shift
 </label>
 <label>
 Jump
-<input v-model="jump" type="number" />
+<input v-model="jump" type="number" min="1"/>
 </label>
 </template>
