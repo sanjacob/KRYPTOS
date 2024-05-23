@@ -4,7 +4,10 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'Major Mono Display': true,
-      'Roboto Mono': true
+      'Roboto Mono': {
+        wght: '100...700'
+      },
+      download: true
     }
   },
   css: [
