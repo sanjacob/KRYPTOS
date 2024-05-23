@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
-const page = route.params.id[0];
+const page = parseInt(route.params.id[0]);
 
 const input = tools.s(k[page]);
 const cipher = ref(input);
@@ -14,7 +14,7 @@ useHead({ title: 'K' + route.params.id });
   <aside>
     <KryptosNav />
     <h1>k{{page}}</h1>
-    <KryptosSolution v-if="page != 4"/>
+    <KryptosSolution :page/>
     <KryptosPipeline :input @change="cipher = $event"/>
     <KryptosResize v-model.number="width"/>
   </aside>

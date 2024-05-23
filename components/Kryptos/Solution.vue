@@ -1,10 +1,11 @@
 <script setup lang="ts">
-const route = useRoute();
-const page = route.params.id[1];
+const props = defineProps({
+  page: Number
+});
 </script>
 
 <template>
-<details>
+<details v-if="page != 4">
 <summary>Official Solution</summary>
 <ol>
 <li v-for="s in solutions[page]">{{s}}</li>
