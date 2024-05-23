@@ -56,6 +56,24 @@ aside {
   flex: 1 0;
   width: 100%;
   min-width: min(300px, calc(100lvw - 4rem));
+  max-height: calc(100lvh - 4rem);
+  padding-right: 1rem;
+  overflow-y: scroll;
+}
+
+aside::-webkit-scrollbar {
+  display: none;
+}
+
+aside {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@media only screen and (max-width: 800px) {
+  aside {
+    max-height: unset;
+  }
 }
 
 #grid {
