@@ -1,10 +1,11 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-  const valid = [
-    '/', '/k0', '/k1', '/k2', '/k3', '/k4',
-    '/manifest.webmanifest'
-  ];
+  if (to.path.startsWith('/k')) {
+    const valid = [
+      '/k0', '/k1', '/k2', '/k3', '/k4',
+    ];
 
-  if (!valid.includes(to.path)) {
-    return navigateTo('/');
+    if (!valid.includes(to.path)) {
+      return navigateTo('/');
+    }
   }
 });
