@@ -1,49 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="250"
-   height="250"
-   viewBox="0 0 250 250"
-   version="1.1"
-   id="svg6"
-   sodipodi:docname="favicon.svg"
-   inkscape:export-filename="../../public/pwa-512x512.png"
-   inkscape:export-xdpi="196.61"
-   inkscape:export-ydpi="196.61"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs10" />
-  <sodipodi:namedview
-     id="namedview8"
-     pagecolor="#505050"
-     bordercolor="#eeeeee"
-     borderopacity="1"
-     inkscape:showpageshadow="0"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#505050"
-     showgrid="false"
-     inkscape:zoom="3.364"
-     inkscape:cx="75.653983"
-     inkscape:cy="125.14863"
-     inkscape:window-width="1920"
-     inkscape:window-height="1013"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg6" />
+<svg width="250" height="250"
+     viewBox="0 0 250 250" version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:svg="http://www.w3.org/2000/svg">
   <rect
      style="fill:#4e7566;fill-opacity:1;"
-     width="250"
-     height="250"
-     x="0"
-     y="0"
-     ry="4.7383637"
-     id="rect2" />
+     width="250" height="250" x="0" y="0"
+     ry="4.7383637" />
   <path
-     d="m 92.06,166.472 q 0,0.864 0,1.728 0,0.864 0.216,1.512 z m 0.216,3.24 q 0.432,2.376 1.296,3.888 1.08,1.512              3.672,1.512 H 109.34 V 189.8 H 44.108 v -14.688 l 15.336,0.216 q 3.24,-0.216 5.184,-1.512 1.944,-1.296              1.944,-4.968 V 74.888003 H 44.108 v -14.688 h 65.232 v 14.688 H 97.028 q -2.16,0.216 -3.456,0.648 -1.296,0.432              -1.296,2.16 V 129.752 L 148.22,79.424003 q 1.512,-1.08 1.944,-2.808 0.648,-1.728 -1.944,-1.728 h -21.384 v -14.688              h 66.312 v 14.688 H 174.572 L 138.284,107.288 q -2.16,1.512 -1.944,3.672 0.216,2.16 1.944,4.104 l 54,60.048              h 13.608 V 189.8 h -79.056 v -14.688 h 20.52 q 4.32,-0.432 6.264,-2.16 1.944,-1.728 -0.864,-4.752 l -36.72,-40.608              -23.76,21.6 -0.216,17.28 z"
-     id="path4" />
+     d="m 92.06,166.472 q 0,0.864 0,1.728 0,0.864 0.216,1.512 z m 0.216,3.24 q 0.432,2.376 1.296,3.888 1.08,1.512              3.672,1.512 H 109.34 V 189.8 H 44.108 v -14.688 l 15.336,0.216 q 3.24,-0.216 5.184,-1.512 1.944,-1.296              1.944,-4.968 V 74.888003 H 44.108 v -14.688 h 65.232 v 14.688 H 97.028 q -2.16,0.216 -3.456,0.648 -1.296,0.432              -1.296,2.16 V 129.752 L 148.22,79.424003 q 1.512,-1.08 1.944,-2.808 0.648,-1.728 -1.944,-1.728 h -21.384 v -14.688              h 66.312 v 14.688 H 174.572 L 138.284,107.288 q -2.16,1.512 -1.944,3.672 0.216,2.16 1.944,4.104 l 54,60.048              h 13.608 V 189.8 h -79.056 v -14.688 h 20.52 q 4.32,-0.432 6.264,-2.16 1.944,-1.728 -0.864,-4.752 l -36.72,-40.608              -23.76,21.6 -0.216,17.28 z"/>
 </svg>
