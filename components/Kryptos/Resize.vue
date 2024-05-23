@@ -5,13 +5,13 @@ const model = defineModel();
 <template>
 <label>
 <span>Adjust View</span>
-<input v-model="model" type="range" min="4" max="24" step="1"/>
+<input v-model.number="model" type="range" min="4" max="24" step="1"/>
 </label>
 
 </template>
 
 <style scoped>
-label { 
+label {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

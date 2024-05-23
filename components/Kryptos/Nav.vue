@@ -19,9 +19,12 @@ nav {
 
 nav > a {
   color: unset;
+  opacity: 0.4;
+  transition: opacity 0.2s linear;
 }
 
 nav > a:hover {
   text-decoration: underline;
+  opacity: 1;
 }
 </style>

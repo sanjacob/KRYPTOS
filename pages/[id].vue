@@ -12,13 +12,13 @@ useHead({ title: route.params.id });
 <template>
 <div id="split">
   <aside>
+    <KryptosNav />
     <h1>k{{page}}</h1>
     <KryptosSolution v-if="page != 4"/>
-    <KryptosPipeline :input @change="cipher = $event;"/>
-    <KryptosResize v-model="width"/>
-    <KryptosNav />
+    <KryptosPipeline :input @change="cipher = $event"/>
+    <KryptosResize v-model.number="width"/>
   </aside>
-  <KryptosGrid id="grid" :cipher :col="width" />
+  <KryptosGrid id="grid" :cipher :col="width"/>
 </div>
 </template>
 

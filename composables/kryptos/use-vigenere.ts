@@ -4,9 +4,13 @@ export const useVigenere = (cipher, key, passphrase) => {
   const result = ref('');
 
   const decode = (passphrase) => {
+    if (passphrase == '') {
+      return toValue(cipher);
+    }
+
     const abcLen = alphabet.value.length;
 
-    return toValue(cipher).split('').map((c, i) => { 
+    return toValue(cipher).split('').map((c, i) => {
       const k = passphrase[i % passphrase.length];
       const d = index.value[c] - index.value[k];
       return alphabet.value[((d < 0) ? abcLen + d : d) % abcLen];
