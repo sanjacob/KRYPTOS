@@ -18,7 +18,7 @@ watch(result, propagate);
   <input v-model="col" id="alphabet" type="number" min="1" step="1"/>
 </label>
 <label>
-  Turns
+  Angle
   <input v-model="angle" id="alphabet" type="number" min="0" max="270" step="90"/>
 </label>
 </template>

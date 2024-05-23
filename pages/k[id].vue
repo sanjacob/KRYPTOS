@@ -13,18 +13,36 @@ useHead({ title: 'K' + route.params.id });
 <div id="split">
   <aside>
     <KryptosNav />
-    <h1>k{{page}}</h1>
+    <header>
+      <h1>k{{page}}</h1>
+      <sub>({{cipher.length}})</sub>
+    </header>
     <KryptosSolution :page/>
     <KryptosPipeline :input @change="cipher = $event"/>
     <KryptosResize v-model.number="width"/>
+    <KryptosFactors :n="cipher.length" @click="width = $event"/>
   </aside>
   <KryptosGrid id="grid" :cipher :col="width"/>
 </div>
 </template>
 
 <style scoped>
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 2rem 0;
+  justify-content: center;
+  align-items: stretch;
+}
+
+sub {
+  vertical-align: sub;
+  display: inline;
+}
+
 h1 {
   font-size: 2rem;
+  margin: 0;
 }
 
 div#split {

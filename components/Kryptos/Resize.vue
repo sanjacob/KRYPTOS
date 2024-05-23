@@ -5,7 +5,7 @@ const model = defineModel();
 <template>
 <label>
 <span>Adjust View</span>
-<input v-model.number="model" type="range" min="4" max="24" step="1"/>
+<input v-model.number="model" type="range" min="3" max="24" step="1"/>
 </label>
 
 </template>
