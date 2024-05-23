@@ -9,39 +9,29 @@ const props = defineProps({
 </script>
 
 <template>
-<ul :style="`grid-template-columns: repeat(${props.col}, 1fr);`">
-  <li v-for="c in cipher.split('')">{{ c }}</li>
+<ul :style="`grid-template-columns: repeat(${props.col}, minmax(1rem, 4rem));`">
+  <li v-for="c in cipher.split('')">
+    <span>{{ c }}</span>
+  </li>
 </ul>
 </template>
 
 <style scoped>
 ul {
   display: grid;
-  font-size: 3rem;
-  align-content: start;
   grid-gap: 1px;
-  overflow: scroll;
+  align-content: start;
+  justify-content: center;
 }
 
 li {
   border: 1px solid black;
   text-align: center;
   aspect-ratio: 1/1;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  min-width: 3rem;
+  container-type: inline-size;
 }
 
-@media only screen and (max-width: 1000px) {
-  ul {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  ul {
-    font-size: 1rem;
-  }
+li > span {
+  font-size: 70cqw;
 }
 </style>

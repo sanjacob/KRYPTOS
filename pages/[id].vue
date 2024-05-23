@@ -43,6 +43,7 @@ aside {
 #grid {
   flex: 3 0;
   width: 100%;
-  min-width: min(400px, calc(100lvw - 4rem))
+  min-width: min(400px, calc(100lvw - 4rem));
+  max-width: calc(100lvw - 4rem);
 }
 </style>
