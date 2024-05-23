@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
-const page = route.params.id[1];
+const page = route.params.id[0];
 
 const input = tools.s(k[page]);
 const cipher = ref(input);
