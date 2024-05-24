@@ -12,11 +12,8 @@ useHead({ title: 'K' + route.params.id });
 <template>
 <div id="split">
   <aside>
-    <KryptosNav />
-    <header>
-      <h1>k{{page}}</h1>
-      <sub>({{cipher.length}})</sub>
-    </header>
+    <KryptosNav/>
+    <KryptosHeader :page :length="cipher.length"/>
     <KryptosSolution :page/>
     <KryptosPipeline :input @change="cipher = $event"/>
     <KryptosResize v-model.number="width"/>

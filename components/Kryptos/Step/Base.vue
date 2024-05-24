@@ -4,6 +4,7 @@ import KryptosStepRotate from './Rotate.vue';
 import KryptosStepReverse from './Reverse.vue';
 import KryptosStepPad from './Pad.vue';
 import KryptosStepJump from './Jump.vue';
+import KryptosStepOverwrite from './Overwrite.vue';
 
 const emit = defineEmits(['change', 'remove']);
 
@@ -25,7 +26,8 @@ const modes = [
   KryptosStepRotate,
   KryptosStepReverse,
   KryptosStepPad,
-  KryptosStepJump
+  KryptosStepJump,
+  KryptosStepOverwrite
 ];
 </script>
 

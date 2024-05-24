@@ -9,6 +9,7 @@ const model = defineModel();
   <option value="2">Reverse</option>
   <option value="3">Pad</option>
   <option value="4">Jump</option>
+  <option value="5">Overwrite</option>
 </select>
 </template>
 
