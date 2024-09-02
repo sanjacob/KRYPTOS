@@ -70,6 +70,38 @@ export default defineNuxtConfig({
           sizes: '512x512',
           type: 'image/png'
         }
+      ],
+      screenshots: [
+        {
+          src: "pwa-ss-index.png",
+          sizes: "1920×1388",
+          type: "image/png",
+          platform: "wide"
+        },
+        {
+          src: "pwa-ss-k1.png",
+          sizes: "1920×965",
+          type: "image/png",
+          platform: "wide"
+        },
+        {
+          src: "pwa-ss-k2.png",
+          sizes: "1920×965",
+          type: "image/png",
+          platform: "wide"
+        },
+        {
+          src: "pwa-ss-k3.png",
+          sizes: "1920×965",
+          type: "image/png",
+          platform: "wide"
+        },
+        {
+          src: "pwa-ss-k4.png",
+          sizes: "1920×965",
+          type: "image/png",
+          platform: "wide"
+        }
       ]
     },
     workbox: {
