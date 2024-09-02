@@ -28,12 +28,15 @@ export default defineNuxtConfig({
       scope_extensions: [
         {origin: "kryptos.jsan.ch"}
       ],
+      categories: ["entertainment", "games", "education"],
       dir: "auto",
       prefer_related_applications: false,
       display: "standalone",
       display_override: [
         "window-controls-overlay"
       ],
+      file_handlers: [],
+      handle_links: "preferred",
       edge_side_panel: {},
       protocol_handlers: [],
       shortcuts: [
