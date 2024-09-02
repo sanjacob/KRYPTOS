@@ -1,9 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@vite-pwa/nuxt'],
+
   css: [
     '~/assets/css/theme.css'
   ],
+
   app: {
     head: {
       link: [
@@ -14,6 +16,7 @@ export default defineNuxtConfig({
       }
     }
   },
+
   pwa: {
     registerType: 'autoUpdate',
     registerWebManifestInRouteRules: true,
@@ -108,6 +111,8 @@ export default defineNuxtConfig({
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
     }
   },
+
   devtools: { enabled: true },
-  modules: ["@vite-pwa/nuxt"]
+  modules: ["@vite-pwa/nuxt"],
+  compatibilityDate: "2024-09-02"
 })
